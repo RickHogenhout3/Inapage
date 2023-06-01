@@ -9,4 +9,7 @@ header {
     /* Additional CSS properties for the background */
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(54, 233, 34);
 }
+
+<link rel="icon" type="image-x-icon" href="img/set/img_logo.png">
