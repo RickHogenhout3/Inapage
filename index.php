@@ -134,6 +134,17 @@
             color: yellow;
             font: bold 30px/1.5 Helvetica, Verdana, sans-serif;
         }
+        .chronicle-image {
+    background-image: url("img/set/bg_chronicle_pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 425%;
+    right: -3%;
+    width: 150%; /* Added this property to ensure the image covers the entire width */
+    z-index: -40; /* Move the image to the background */
+}
     </style>
     <script>
         function toggleLanguageOptions(event) {
@@ -197,8 +208,49 @@
 
         <p class="new-eleven" style="position: absolute; left:40%; top:300%; text-align: center;">That is <br> the new Inazuma Eleven!</p>
 
-        <carousell>
         
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="position: absolute; left: 8%; top: 325%;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" ></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/set/img_slide_story01.jpg" alt="Introduce" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story02.jpg" alt="Story" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story03.jpg" alt="Chronicle" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story04.jpg" alt="Chronicle" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story05.jpg" alt="Chronicle" style="width: 100%;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="chronicle-image">
+        yubjdsbs
+    </div>
     </div>
 </body>
 </html>
