@@ -1,0 +1,12 @@
+header {
+    background: #000;
+    color: #fff;
+    height: 48px;
+}
+
+.background-image {
+    background-image: url("img/set/bg_visual_pc.jpg");
+    /* Additional CSS properties for the background */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
