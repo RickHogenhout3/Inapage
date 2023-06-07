@@ -14,6 +14,11 @@
         font-weight: bold;
         text-shadow: 0 0 5px blue;
         }
+        h1 {
+        color: yellow;
+        font-weight: bold;
+        text-shadow: 0 0 5px blue;
+        }
         .visual {
             color: lightskyblue;
             text-shadow: 2px 2px #000;
@@ -135,16 +140,77 @@
             font: bold 30px/1.5 Helvetica, Verdana, sans-serif;
         }
         .chronicle-image {
-    background-image: url("img/set/bg_chronicle_pc.jpg");
+            background-image: url("img/set/bg_chronicle_pc.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            width: 1700px;
+            left: -120px;
+            position: absolute;
+            top: 425%;
+        }
+        .characters {
+            color: greenyellow;
+            font-weight: bold;
+            text-shadow: 0 0 5px black;
+            font-size: 37px;
+        }
+        .text-container {
+    position: relative;
+    display: inline-block;
+}
+
+.include::before,
+.include::after,
+.exclude::before,
+.exclude::after {
+    content: "[";
+    font-size: 20px;
+}
+
+.include::after,
+.exclude::after {
+    content: "]";
+}
+
+.include::before,
+.exclude::before {
+    position: absolute;
+    left: -20px;
+}
+
+.include::after {
+    position: absolute;
+    right: -20px;
+}
+
+.exclude::before,
+.exclude::after {
+    top: 2px;
+}
+.chronicle2 {
+    background-image: url("img/set/bg_fix_pc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-position: center;
     position: absolute;
-    top: 425%;
-    right: -3%;
-    width: 150%; /* Added this property to ensure the image covers the entire width */
-    z-index: -40; /* Move the image to the background */
+    top: 513%;
+    width: 100%;
+    height: 110%;
+    overflow-y: auto;
 }
+.row {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+  }
+
+  .caravan{
+            color: lightskyblue;
+            font: bold 26px/1.5 Helvetica, Verdana, sans-serif;
+            text-shadow: 0 0 5px black;
+        }
     </style>
     <script>
         function toggleLanguageOptions(event) {
@@ -249,8 +315,45 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <div class="chronicle-image">
-        yubjdsbs
+    <p class="story-mode" style="position: absolute; left:18%; top:5%;">Chronical mode</p>
+    <h1 style="position:absolute; left:18%; top:15%">Face Off Against Inazuma Eleven's Past!</h1>
+    <img src="img/text/tit_chronicle_pc.png" alt="oof" style="position:absolute; left:13%; top:5%">
+    <p class="characters" style="position:absolute; left:15%; top:28%">Including over 4500 characters <br> from the series' past! <br> Every single player will be <br> making an appearance!</p>
+    <div class="text-container" style="position:absolute; left:15%; top:63%">
+        <span class="include">*Includes characters from different versions, releases, and season passes.</span>
     </div>
+    <div class="text-container" style="position:absolute; left:15%; top:65%">
+        <span class="exclude">*Excluding characters from some collaborations, etc.</span>
     </div>
+    <div style="position:absolute; left:16%; top:71%; border: 3px solid rgb(1, 163, 101);">
+        <img src="img/set/img_chronicle01.jpg" alt="vs" style="height:175px;">
+        <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 0; bottom: 0;">
+    </div>
+</div>
+<div class="chronicle2">
+  <div class="row" style="position: absolute; left: 15%; top:10%">
+    <img src="img/set/bg_chronicle_list.png" alt="list">
+    <img src="img/set/img_chronicle02.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 25%; transform: translate(-50%, -50%); width:43%">
+    <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
+    <p class="caravan" style="position:absolute; top:58%; left:6%; text-align: center;">A brand new caravan <br> <br> <a style="color:yellow">The Inazuma V Caravan</a> <br> can travle through time to <br> obeserve all of Inazuma history!</p>
+    <div class="column">
+      <img src="img/set/bg_chronicle_list.png" alt="list">
+      <img src="img/set/img_chronicle03.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 75%; transform: translate(-50%, -50%); width:43%">
+      <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
+    </div>
+  </div>
+  <div class="row" style="position: absolute; left:15%; top:75%">
+    <div class="column">
+      <img src="img/set/bg_chronicle_list.png" alt="list">
+      <img src="img/set/img_chronicle04.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 25%; transform: translate(-50%, -50%); width:43%">
+      <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
+    </div>
+    <div class="column">
+      <img src="img/set/bg_chronicle_list.png" alt="list">
+      <img src="img/set/img_chronicle05.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 75%; transform: translate(-50%, -50%); width:43%">
+      <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
+    </div>
+  </div>
+</div>
 </body>
 </html>

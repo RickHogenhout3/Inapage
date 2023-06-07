@@ -1,15 +1,3 @@
-header {
-    background: #000;
-    color: #fff;
-    height: 48px;
+body{
+    color: rgb(1, 163, 101)
 }
-
-.background-image {
-    background-image: url("img/set/bg_visual_pc.jpg");
-    /* Additional CSS properties for the background */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(54, 233, 34);
-}
-
-<link rel="icon" type="image-x-icon" href="img/set/img_logo.png">
