@@ -252,6 +252,14 @@
             position: absolute;
             top: 210%;
         }
+        footer{
+            background: #212121;
+            color: #fff;
+            position: absolute;
+            top: 300%;
+            width: 100%;
+            height: 100%;
+        }
     </style>
     <script>
         function toggleLanguageOptions(event) {
@@ -407,11 +415,53 @@
 </div>
 <div class="mappa">
     <img src="img/set/bg_mappa.jpg" alt="mappa" style="position: absolute; right:0%">
-    <p class="animation" style="color: #fff; position:absolute; left:10%; top:10% ">ANIMATION</p>
+    <p class="animation" style="color: #fff; position:absolute; left:10%; top:10%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">ANIMATION</p>
     <img style="position: absolute; left:10%; top:20%;" src="img/set/img_logo_mappa.png" alt="mappa">
-    <p class="produced" style="color:white; position:absolute; left:10%; top:40%;">Animation Produced by MAPPA!</p>
-    <p class="in-game" style="color:darkcyan; position:absolute; left:10%; top:50%;">jruhnidrjgiodhio</p>
+    <p class="produced" style="color:white; position:absolute; left:10%; top:40%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">Animation Produced by MAPPA!</p>
+    <p class="in-game" style="color:darkcyan; position:absolute; left:10%; top:50%; font: bold 15px/1.5 Helvetica, Verdana, sans-serif;">The in-game cut-scenes and other animation were <br> produced in collaboration with the animation studio <br> MAPPA. <br>
+The game features more hours of full-blown animation <br> than ever, elevating the story, and <br> making it even more dramatic and enjoyable!</p>
 </div>
+<footer>
+<table style="margin-right: 20px;">
+<div style="display: flex; justify-content: center;">
+  <table style="position: absolute; top:0%; left:23%;">
+    <tr>
+      <td>Title:</td>
+      <td>INAZUMA ELEVEN: Victory Road</td>
+    </tr>
+    <tr>
+      <td>Genre:</td>
+      <td>Collection and Simulation Soccer RPG</td>
+    </tr>
+    <tr>
+      <td>Supported Platforms:</td>
+      <td>Nintendo Switch／PlayStation®4／iOS／Android</td>
+    </tr>
+    <tr>
+      <td>Release Date:</td>
+      <td>Coming in 2023</td>
+    </tr>
+  </table>
+
+  <table style="position: absolute; top:0%; right:23%;">
+    <tr>
+      <td>Price:</td>
+      <td>undecided</td>
+    </tr>
+    <tr>
+      <td>Rating:</td>
+      <td>Review pending</td>
+    </tr>
+    <tr>
+      <td>Design/Production:</td>
+      <td>LEVEL-5 Inc.</td>
+    </tr>
+  </table>
+  
+<img src="img/set/bnr_vision_pc.png" alt="vision" style="position: absolute; bottom: 30%; left:50%">
+<img src="img/set/img_logo_l5_f.png" alt="lvl5" style="position: absolute; bottom: 10%; height: 45px; width: 100px; left:50%">
+</div>
+</footer>
 </div>
 </body>
 </html>
