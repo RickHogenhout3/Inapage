@@ -199,6 +199,7 @@
     width: 100%;
     height: 110%;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .row {
     display: flex;
@@ -210,6 +211,46 @@
             color: lightskyblue;
             font: bold 26px/1.5 Helvetica, Verdana, sans-serif;
             text-shadow: 0 0 5px black;
+        }
+        .routes{
+            color: lightskyblue;
+            font: bold 24px/1.5 Helvetica, Verdana, sans-serif;
+            text-shadow: 0 0 5px black;
+        }
+        .routes::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: blue;
+  margin-top: 5px;
+}
+    .points{
+            color: lightgoldenrodyellow;
+            font: bold 14px/1.5 Helvetica, Verdana, sans-serif;
+            text-shadow: 0 0 5px black;
+        }
+        .universe{
+            color: lightskyblue;
+            font: bold 28px/1.5 Helvetica, Verdana, sans-serif;
+            text-shadow: 0 0 5px black;
+        }
+        .alley{
+            color: lightskyblue;
+            font: bold 24px/1.5 Helvetica, Verdana, sans-serif;
+            text-shadow: 0 0 5px black;
+        }
+        .playing{
+            color: yellow;
+            font: bold 24px/1.5 Helvetica, Verdana, sans-serif;
+            text-shadow: 0 0 5px black;
+        }
+        .mappa{
+            background-color: #0f131e;
+            background-size: cover;
+            width: 100%; height: 54.5%;
+            position: absolute;
+            top: 210%;
         }
     </style>
     <script>
@@ -331,15 +372,18 @@
     </div>
 </div>
 <div class="chronicle2">
-  <div class="row" style="position: absolute; left: 15%; top:10%">
+  <div class="row" style="position: absolute; left: 15%; top:10%"> 
     <img src="img/set/bg_chronicle_list.png" alt="list">
     <img src="img/set/img_chronicle02.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 25%; transform: translate(-50%, -50%); width:43%">
     <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
-    <p class="caravan" style="position:absolute; top:58%; left:6%; text-align: center;">A brand new caravan <br> <br> <a style="color:yellow">The Inazuma V Caravan</a> <br> can travle through time to <br> obeserve all of Inazuma history!</p>
+    <p class="v" style="position:absolute; top:68%; left:24%; text-align: center;color:orange; font: bold 16px/1.5 Helvetica, Verdana, sans-serif;text-shadow: 0 0 5px black;">Victory</p>
+    <p class="caravan" style="position:absolute; top:63%; left:6%; text-align: center;">A brand new caravan <br> <a style="color:yellow">The Inazuma V Caravan</a> <br> can travle through time to <br> obeserve all of Inazuma history!</p>
     <div class="column">
       <img src="img/set/bg_chronicle_list.png" alt="list">
       <img src="img/set/img_chronicle03.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 75%; transform: translate(-50%, -50%); width:43%">
       <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
+      <p class="routes" style="position:absolute; top:61%; right:6%; text-align: center;">Traverse  <br> <a style="color:yellow">the Chronicle Competition Routes</a> <br> to battle against teams of past <br> the past in Inazuma History Town!</p>
+      <p class="points" style="position:absolute; top:90%; right:6%; text-align: center;">Winning these matches earns you the characters' Bond Stars!</p>
     </div>
   </div>
   <div class="row" style="position: absolute; left:15%; top:75%">
@@ -347,13 +391,27 @@
       <img src="img/set/bg_chronicle_list.png" alt="list">
       <img src="img/set/img_chronicle04.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 25%; transform: translate(-50%, -50%); width:43%">
       <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
+      <p class="universe" style="position: absolute; left: 6%; top: 63%; text-align: center;">You can unlock new characters <br> by using Bond Stars in <br> <a style="color:yellow">the Player's Universe!</a></p>
     </div>
     <div class="column">
       <img src="img/set/bg_chronicle_list.png" alt="list">
       <img src="img/set/img_chronicle05.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 75%; transform: translate(-50%, -50%); width:43%">
       <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
+      <p class="alley" style="position: absolute; right: 7%; top: 61%; text-align: center;">Unlocked characters will appear <br> in <a style="color:yellow">the Bond Alley!</a> <br> fulfill the requirements of <br> the bond network, <br> they can become your ally!</p>
     </div>
   </div>
+  <div class="free-style" style="background-color: #00165e; position:absolute; top:150%; width:100%; height:55%">
+<p class="playing" style="text-align: center;">Play the way you want in freestyle play!</p>
+<img src="img/set/bg_battle01.jpg" alt="battle">
+<img src="img/set/bg_battle02.jpg" alt="soccer">
+</div>
+<div class="mappa">
+    <img src="img/set/bg_mappa.jpg" alt="mappa" style="position: absolute; right:0%">
+    <p class="animation" style="color: #fff; position:absolute; left:10%; top:10% ">ANIMATION</p>
+    <img style="position: absolute; left:10%; top:20%;" src="img/set/img_logo_mappa.png" alt="mappa">
+    <p class="produced" style="color:white; position:absolute; left:10%; top:40%;">Animation Produced by MAPPA!</p>
+    <p class="in-game" style="color:darkcyan; position:absolute; left:10%; top:50%;">jruhnidrjgiodhio</p>
+</div>
 </div>
 </body>
 </html>
