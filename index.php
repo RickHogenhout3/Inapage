@@ -21,7 +21,7 @@
         }
         .visual {
             color: lightskyblue;
-            text-shadow: 2px 2px #000;
+            text-shadow: 1.5px 1.5px #fff;
             font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
         }
         header {
@@ -227,12 +227,12 @@
 }
     .points{
             color: lightgoldenrodyellow;
-            font: bold 14px/1.5 Helvetica, Verdana, sans-serif;
+            font: bold 13px/1.5 Helvetica, Verdana, sans-serif;
             text-shadow: 0 0 5px black;
         }
         .universe{
             color: lightskyblue;
-            font: bold 28px/1.5 Helvetica, Verdana, sans-serif;
+            font: bold 24px/2 Helvetica, Verdana, sans-serif;
             text-shadow: 0 0 5px black;
         }
         .alley{
@@ -259,6 +259,10 @@
             top: 300%;
             width: 100%;
             height: 100%;
+        }
+        .trademark{
+            color: #636363;
+            text-align: center;
         }
     </style>
     <script>
@@ -292,9 +296,9 @@
 
     <p class="background-image">
         <img src="img/set/img_logo.png" alt="Victory Road" style="position: absolute; left:11%">
-        <h3 style="position:absolute; left:40%; top:10%">A brand new Inazuma Eleven game, returning to its roots!</h3>
-        <p class="visual" style="position:absolute; left:60%; top:15%">Play through Story Mode with a new protagonist,</p>
-        <p class="visual" style="position:absolute; left:45%; top:18%">and meet all characters from the series' long history in Chronicle Mode!</p>
+        <h3 style="position:absolute; left:40%; top:10%">Een gloednieuwe Inazuma Eleven game, Keert terug naar zijn roots!</h3>
+        <p class="visual" style="position:absolute; left:60%; top:15%">Speel door Verhaal MOdus met een nieuw hoofdpersoon,</p>
+        <p class="visual" style="position:absolute; left:47%; top:18%">en ontmoet alle characters van de series' lange verleden in Chronicle Modus!</p>
     </p>
 
     <p class="movie-image">
@@ -306,22 +310,22 @@
     <img src="img/set/tit_select_mode_pc.png" alt="modes" style="position: absolute; left:3%; top:150%;">
 
     <div class="story-image">
-        <p class="story-mode" style="position: absolute; left:18%; top:170%;">Story Mode</p>
+        <p class="story-mode" style="position: absolute; left:18%; top:170%;">Verhaal Modus</p>
         <img src="img/text/tit_story_pc.png" alt="Inazuma Eleven" style="position: absolute; left:16%; top:180%;">
         <img src="img/set/bg_chara01.png" alt="unmei" style="position: absolute; left:-14%; top:192%;">
         <img src="img/set/img_chara01_pc.png" alt="unmei" style="position: absolute; left:8%; top:251%;">
         <img src="img/set/bg_chara02.png" alt="endo" style="position: absolute; right:-14%; top:220%;">
         <img src="img/set/img_chara02_pc.png" alt="endo" style="position: absolute; right:7%; top:248%;">
-        <p class="verhaal" style="position: absolute; left:37%; top:200%;">A boy who yearns for a world without soccer.</p>
+        <p class="verhaal" style="position: absolute; left:37%; top:200%;">Een jongen die verlangt naar een wereld zonder voetbal.</p>
         <p class="unmei" style="position: absolute; left:40%; top:205%;">Unmei Sasanami</p>
-        <p class="verhaal" style="position: absolute; left:37%; top:215%;">A soccer monster who stands atop of the world.</p>
+        <p class="verhaal" style="position: absolute; left:37%; top:215%;">Een voetbalmonster dat boven op de wereld staat.</p>
         <p class="haru" style="position: absolute; left:45%; top:220%;">Haru Endo</p>
-        <p class="verhalen" style="position: absolute; left:37%; top:230%; text-align: center;">Their encounter marks <br> the start of a magnificent tale. <br> <br>
-        Thanks to the friends he met at Nagumohara Junior High, <br> Unmei manages to regain his passion for soccer. <br> Together, they try to revive the neglected soccer club. <br><br>
-        Will they be able to topple Raimon Junior High, <br> the reigning champions?
-        <h2 class="about" style="position: absolute; left:37%; top:270%; text-align: center;" >An underdog story <br> about overcoming hardships, <br> growth and challenging <br> the very strongest!</h2>
+        <p class="verhalen" style="position: absolute; left:32%; top:230%; text-align: center;">Hun ontmoeting markeert <br> het begin van een prachtig verhaal. <br> <br>
+        Dankzij de vrienden die hij ontmoette op Nagumohara Junior High, <br> slaagt Unmei erin zijn passie voor voetbal te herwinnen. <br> Samen, proberen ze de verwaarloosde voetbalclub nieuw leven in te blazen. <br><br>
+        Zullen ze in staat zijn om Raimon Junior High, <br> de regerende kampioenen, omver te werpen?
+        <h2 class="about" style="position: absolute; left:34%; top:270%; text-align: center;" >Een underdogverhaal <br> over het overwinnen van <br> ontberingen, groei en het uitdagen <br> van de allersterksten!</h2>
 
-        <p class="new-eleven" style="position: absolute; left:40%; top:300%; text-align: center;">That is <br> the new Inazuma Eleven!</p>
+        <p class="new-eleven" style="position: absolute; left:38%; top:300%; text-align: center;">Dat is <br> de nieuwe Inazuma Eleven!</p>
 
         
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="position: absolute; left: 8%; top: 325%;">
@@ -364,15 +368,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <div class="chronicle-image">
-    <p class="story-mode" style="position: absolute; left:18%; top:5%;">Chronical mode</p>
-    <h1 style="position:absolute; left:18%; top:15%">Face Off Against Inazuma Eleven's Past!</h1>
-    <img src="img/text/tit_chronicle_pc.png" alt="oof" style="position:absolute; left:13%; top:5%">
-    <p class="characters" style="position:absolute; left:15%; top:28%">Including over 4500 characters <br> from the series' past! <br> Every single player will be <br> making an appearance!</p>
+    <p class="story-mode" style="position: absolute; left:18%; top:5%;">Chronical modus</p>
+    <h1 style="position:absolute; left:18%; top:15%">Neem het op tegen het verleden van Inazuma Eleven!</h1>
+    <img src="img/text/tit_chronicle_pc.png" alt="oof" style="position:absolute; left:28%; top:5%">
+    <p class="characters" style="position:absolute; left:15%; top:28%">Inclusief meer dan 4500 personages <br> uit het verleden van de serie! <br> Elke speler zal <br> zijn opwachting maken!</p>
     <div class="text-container" style="position:absolute; left:15%; top:63%">
-        <span class="include">*Includes characters from different versions, releases, and season passes.</span>
+        <span class="include">*Inclusief characters van verschillende versies, releases en seizoenskaarten.</span>
     </div>
     <div class="text-container" style="position:absolute; left:15%; top:65%">
-        <span class="exclude">*Excluding characters from some collaborations, etc.</span>
+        <span class="exclude">*Exclusief characters van sommige collaboraties, etc.</span>
     </div>
     <div style="position:absolute; left:16%; top:71%; border: 3px solid rgb(1, 163, 101);">
         <img src="img/set/img_chronicle01.jpg" alt="vs" style="height:175px;">
@@ -385,13 +389,13 @@
     <img src="img/set/img_chronicle02.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 25%; transform: translate(-50%, -50%); width:43%">
     <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
     <p class="v" style="position:absolute; top:68%; left:24%; text-align: center;color:orange; font: bold 16px/1.5 Helvetica, Verdana, sans-serif;text-shadow: 0 0 5px black;">Victory</p>
-    <p class="caravan" style="position:absolute; top:63%; left:6%; text-align: center;">A brand new caravan <br> <a style="color:yellow">The Inazuma V Caravan</a> <br> can travle through time to <br> obeserve all of Inazuma history!</p>
+    <p class="caravan" style="position:absolute; top:63%; left:3%; text-align: center;">A brand new caravan <br> <a style="color:yellow">De Inazuma V Caravan</a> <br> kan reizen door tijd om de hele <br> geschiedenis van Inazuma te beleven!</p>
     <div class="column">
       <img src="img/set/bg_chronicle_list.png" alt="list">
       <img src="img/set/img_chronicle03.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 75%; transform: translate(-50%, -50%); width:43%">
       <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
-      <p class="routes" style="position:absolute; top:61%; right:6%; text-align: center;">Traverse  <br> <a style="color:yellow">the Chronicle Competition Routes</a> <br> to battle against teams of past <br> the past in Inazuma History Town!</p>
-      <p class="points" style="position:absolute; top:90%; right:6%; text-align: center;">Winning these matches earns you the characters' Bond Stars!</p>
+      <p class="routes" style="position:absolute; top:61%; right:4%; text-align: center;">Doorkruis <br> <a style="color:yellow">de Chronicle Competition Routes</a> <br> om te vechten tegen teams uit <br> het verleden in Inazuma History Town!</p>
+      <p class="points" style="position:absolute; top:90%; right:3%; text-align: center;">Als je deze wedstrijden wint, verdien je de Bond Stars van de personages!</p>
     </div>
   </div>
   <div class="row" style="position: absolute; left:15%; top:75%">
@@ -399,17 +403,17 @@
       <img src="img/set/bg_chronicle_list.png" alt="list">
       <img src="img/set/img_chronicle04.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 25%; transform: translate(-50%, -50%); width:43%">
       <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
-      <p class="universe" style="position: absolute; left: 6%; top: 63%; text-align: center;">You can unlock new characters <br> by using Bond Stars in <br> <a style="color:yellow">the Player's Universe!</a></p>
+      <p class="universe" style="position: absolute; left: 3%; top: 63%; text-align: center;">Je kunt nieuwe personages ontgrendelen <br> door Bond Stars te gebruiken in <br> <a style="color:yellow">the Player's Universe!</a></p>
     </div>
     <div class="column">
       <img src="img/set/bg_chronicle_list.png" alt="list">
       <img src="img/set/img_chronicle05.jpg" alt="victory" style="border: 3px solid yellow; position: absolute; top: 31%; left: 75%; transform: translate(-50%, -50%); width:43%">
       <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
-      <p class="alley" style="position: absolute; right: 7%; top: 61%; text-align: center;">Unlocked characters will appear <br> in <a style="color:yellow">the Bond Alley!</a> <br> fulfill the requirements of <br> the bond network, <br> they can become your ally!</p>
+      <p class="alley" style="position: absolute; right: 4%; top: 61%; text-align: center;">Ontgrendelde personages verschijnen <br> in <a style="color:yellow">de Bond Alley!</a> <br> voldoen aan de vereisten van <br> het Bond Netwerk, <br> ze kunnen je bondgenoot worden!</p>
     </div>
   </div>
   <div class="free-style" style="background-color: #00165e; position:absolute; top:150%; width:100%; height:55%">
-<p class="playing" style="text-align: center;">Play the way you want in freestyle play!</p>
+<p class="playing" style="text-align: center;">Speel hoe je wilt in freestyle play!</p>
 <img src="img/set/bg_battle01.jpg" alt="battle">
 <img src="img/set/bg_battle02.jpg" alt="soccer">
 </div>
@@ -417,40 +421,40 @@
     <img src="img/set/bg_mappa.jpg" alt="mappa" style="position: absolute; right:0%">
     <p class="animation" style="color: #fff; position:absolute; left:10%; top:10%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">ANIMATION</p>
     <img style="position: absolute; left:10%; top:20%;" src="img/set/img_logo_mappa.png" alt="mappa">
-    <p class="produced" style="color:white; position:absolute; left:10%; top:40%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">Animation Produced by MAPPA!</p>
-    <p class="in-game" style="color:darkcyan; position:absolute; left:10%; top:50%; font: bold 15px/1.5 Helvetica, Verdana, sans-serif;">The in-game cut-scenes and other animation were <br> produced in collaboration with the animation studio <br> MAPPA. <br>
-The game features more hours of full-blown animation <br> than ever, elevating the story, and <br> making it even more dramatic and enjoyable!</p>
+    <p class="produced" style="color:white; position:absolute; left:10%; top:40%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">Animation Geproduceerd door MAPPA!</p>
+    <p class="in-game" style="color:darkcyan; position:absolute; left:10%; top:50%; font: bold 15px/1.5 Helvetica, Verdana, sans-serif;">De in-game cut-scenes en andere animatie werden <br> geproduceerd in samenwerking met de animatiestudio <br> MAPPA. <br>
+De game bevat meer uren aan volledige animatie <br> dan ooit, waardoor het verhaal wordt verhoogd en <br> het nog dramatischer en leuker wordt!</p>
 </div>
 <footer>
 <table style="margin-right: 20px;">
 <div style="display: flex; justify-content: center;">
-  <table style="position: absolute; top:0%; left:23%;">
+  <table style="position: absolute; top:5%; left:23%;">
     <tr>
-      <td>Title:</td>
+      <td>Titel:</td>
       <td>INAZUMA ELEVEN: Victory Road</td>
     </tr>
     <tr>
       <td>Genre:</td>
-      <td>Collection and Simulation Soccer RPG</td>
+      <td>Collectie en Simulatien Voetbal RPG</td>
     </tr>
     <tr>
       <td>Supported Platforms:</td>
       <td>Nintendo Switch／PlayStation®4／iOS／Android</td>
     </tr>
     <tr>
-      <td>Release Date:</td>
-      <td>Coming in 2023</td>
+      <td>Release Datum:</td>
+      <td>Komt in 2023</td>
     </tr>
   </table>
 
-  <table style="position: absolute; top:0%; right:23%;">
+  <table style="position: absolute; top:5%; right:15%;">
     <tr>
-      <td>Price:</td>
-      <td>undecided</td>
+      <td>Prijs:</td>
+      <td>onbesloten</td>
     </tr>
     <tr>
       <td>Rating:</td>
-      <td>Review pending</td>
+      <td>Beoordeling in behandeling</td>
     </tr>
     <tr>
       <td>Design/Production:</td>
@@ -458,9 +462,22 @@ The game features more hours of full-blown animation <br> than ever, elevating t
     </tr>
   </table>
   
-<img src="img/set/bnr_vision_pc.png" alt="vision" style="position: absolute; bottom: 30%; left:50%">
-<img src="img/set/img_logo_l5_f.png" alt="lvl5" style="position: absolute; bottom: 10%; height: 45px; width: 100px; left:50%">
+<img src="img/set/bnr_vision_pc.png" alt="vision" style="position: absolute; bottom: 55%; left:30%">
+<img src="img/set/img_logo_l5_f.png" alt="lvl5" style="position: absolute; bottom: 45%; height: 45px; width: 100px; left:50%">
+<div style="display: flex; justify-content: center; position:absolute; bottom:35%; left:5%">
+    <img src="img/set/footer-banner03.png" alt="inazuma" style="width: 12%; margin-right: 10px;">
+    <img src="img/set/footer-banner04.jpg" alt="eleven" style="width: 12%; margin-right: 10px;">
+    <img src="img/set/bnr_kadokawa.jpg" alt="roads" style="width: 12%;">
 </div>
+<div class="trademark" style="position: absolute; bottom: 23%; left:28%; width:50%; height:10%; font-size: 85%;">
+    *The Nintendo Switch logo and Nintendo Switch are trademarks of Nintendo. <br>
+    *"<img src="img/set/img_logo_ps.png" style="height: 16px;">", "PlayStation", "<img src="img/set/img_logo_ps4.png" style="height: 12px;">" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. <br>
+    *iPhone is a registered trademark of Apple Inc. in the U.S. and other countries. App Store is a service mark of Apple Inc. <br>
+    *Android is a registered trademark of Google LLC. <br>
+    *All company and product names mentioned herein are registered trademarks or trademarks of their respective companies. <br>
+    *Republishing or repurposing any and all assets on this page is strictly forbidden.
+</div>
+<div class="copyright" style="position: absolute; bottom:10%; left:50%; font-size: 80%;">©LEVEL-5 Inc.</div>
 </footer>
 </div>
 </body>
