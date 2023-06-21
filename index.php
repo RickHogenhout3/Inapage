@@ -17,7 +17,7 @@
         }
     </script>
 </head>
-<body>
+<body style="background-color: #000;">
    <?php include 'header.php'; ?>
 
     <p class="background-image">

@@ -39,6 +39,14 @@
             background-size: cover;
             height: 420px;
         }
+        .clouds {
+            background-image: url("img/set/bg_movie_pc.jpg");
+            /* Additional CSS properties for the background */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* Add this line */
+        }
+        
         
         .story-image {
             background-image: url("img/set/bg_story_pc.jpg");

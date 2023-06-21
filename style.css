@@ -1,3 +1,139 @@
-body{
-    color: rgb(1, 163, 101)
+body {
+    background-image: url("img/set/bg_movie_pc.jpg");
+    background-color: #000;
+    /* Additional CSS properties for the background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line */
+    overflow-x: hidden;
+}
+
+.character-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.character-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.character-description {
+    font-size: 18px;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    height: 48px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+footer{
+    background: #212121;
+    color: #fff;
+    position: absolute;
+    top: 600%;
+    width: 100%;
+    height: 100%;
+}
+
+.language-bar {
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.language-bar img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+.language-bar ul {
+    display: none;
+    margin-left: 4px;
+}
+
+.language-bar ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mark-evans {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_raimon.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.axel-blaze {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_kirkwood.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.jude-sharp {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_royal_academy.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.arion-sherwind {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_raimon_go.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.riccardo-dirigo {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_DiRigo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.victor-blade {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_fifth_sector.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.sonny-wright{
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_raimon_ares.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.elliot-ember {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_footbal_frontier\(1\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.heath-moore {
+    position: relative; /* Change position to relative */
+    background-image: url("img/set/bg_footbal_frontier\(2\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
