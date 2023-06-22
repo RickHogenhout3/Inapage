@@ -14,7 +14,6 @@
 
     <div class="mark-evans" style="position:absolute; top:15%">
     <div class="character-container">
-        <img class="logos" src="img/logos/Raimon.png" alt="raimon">
         <img class="character-image" src="img/characters/Mark_Evans.webp" alt="Character Image">
         <div class="character-description">
             <h2 style="color:yellow; text-shadow: 0 0 5px blue;">Mark Evans</h2>
