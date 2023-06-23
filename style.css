@@ -37,8 +37,6 @@ header {
 footer{
     background: #212121;
     color: #fff;
-    position: absolute;
-    top: 600%;
     width: 100%;
     height: 100%;
 }
@@ -136,4 +134,48 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.character-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.character-description {
+    margin-top: 10px;
+}
+
+.character-image {
+    max-width: 200px;
+    max-height: 200px;
 }
