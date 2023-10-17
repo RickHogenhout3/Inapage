@@ -13,23 +13,50 @@
             text-shadow: 1.5px 1.5px #fff;
             font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
         }
+
+        .logo-and-text {
+            display: flex;
+            align-items: center;
+        }
+        
+        
         header {
             background: #000;
             color: #fff;
             height: 48px;
         }
 
-        .background-image {
-            background-image: url("img/set/bg_visual_pc.jpg");
-            /* Additional CSS properties for the background */
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 660px;
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
-        body {
-            background-color: #000;
-            overflow-x: hidden;
+        .logo {
+            flex: 1;
+            height: auto;
+            width: 30px;
+        }
+        
+        .language-bar {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+               
+
+        .background-image {
+            background-image: url("img/set/pc/bg_visual_pc.jpg");
+            /* Additional CSS properties for the background */
+            background-size: cover;
+            background-attachment: fixed;
+            height: 730px;
+        }
+
+        .yellow-line {
+            height: 1.5px;
+            background-color: yellow;
         }
         
         .movie-image {
@@ -37,19 +64,26 @@
             /* Additional CSS properties for the background */
             background-repeat: no-repeat;
             background-size: cover;
-            height: 420px;
+            display: flex;
+            align-items: center;
         }
+        
+        
+        .mobile-banner {
+            margin-top: 10px;
+        }
+        
         .clouds {
             background-image: url("img/set/bg_movie_pc.jpg");
             /* Additional CSS properties for the background */
-            background-repeat: no-repeat;
+            background-repeat:repeat-y;
             background-size: cover;
             background-attachment: fixed; /* Add this line */
         }
         
         
         .story-image {
-            background-image: url("img/set/bg_story_pc.jpg");
+            background-image: url("img/set/pc/bg_story_pc.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 810px;
@@ -67,8 +101,6 @@
         }
         .verhalen{
             text-align: center;
-            position: absolute;
-            left: 40%;
             transform: translateX(-10%);
             color: lightcyan;
             text-shadow: 2px 2px #000;
@@ -95,28 +127,22 @@
         }
         .haru::after {
             content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
             width: 100%;
             height: 1px;
             background-color: rgb(70, 215, 217);
         }
+
+        .text {
+            text-align: left;
+        }
+        
         .language-bar {
-            position: absolute;
-            left: 80%;
-            top: 2%;
             display: flex;
             align-items: center;
         }
         .language-bar img {
             width: 24px;
             height: 24px;
-            margin-right: 4px;
-        }
-        .language-bar ul {
-            display: none;
-            margin-left: 4px;
         }
         .language-bar ul.active {
             display: flex;
@@ -141,11 +167,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 650px;
-            width: 1700px;
-            left: -120px;
-            position: absolute;
-            top: 425%;
         }
         .characters {
             color: greenyellow;
@@ -157,44 +178,11 @@
     position: relative;
     display: inline-block;
 }
-
-.include::before,
-.include::after,
-.exclude::before,
-.exclude::after {
-    content: "[";
-    font-size: 20px;
-}
-
-.include::after,
-.exclude::after {
-    content: "]";
-}
-
-.include::before,
-.exclude::before {
-    position: absolute;
-    left: -20px;
-}
-
-.include::after {
-    position: absolute;
-    right: -20px;
-}
-
-.exclude::before,
-.exclude::after {
-    top: 2px;
-}
 .chronicle2 {
     background-image: url("img/set/bg_fix_pc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 513%;
-    width: 100%;
-    height: 110%;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -246,18 +234,19 @@
             background-color: #0f131e;
             background-size: cover;
             width: 100%; height: 54.5%;
-            position: absolute;
-            top: 210%;
         }
         footer{
             background: #212121;
             color: #fff;
-            position: absolute;
-            top: 300%;
-            width: 100%;
-            height: 100%;
         }
         .trademark{
             color: #636363;
             text-align: center;
+        }
+
+        body {
+            background-color: #000;
+            overflow-x: hidden; /* Voorkomt horizontaal scrollen */
+            margin: 0;
+            padding: 0;
         }
