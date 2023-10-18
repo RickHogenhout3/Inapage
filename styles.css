@@ -60,12 +60,13 @@
         }
         
         .movie-image {
-            background-image: url("img/set/bg_movie_pc.jpg");
+            background-image: url("img/set/pc/bg_movie_pc.jpg");
             /* Additional CSS properties for the background */
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
             align-items: center;
+    
         }
         
         
@@ -86,7 +87,7 @@
             background-image: url("img/set/pc/bg_story_pc.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            height: 810px;
+            height: 910px;
         }
         
         .story-mode {
@@ -100,12 +101,11 @@
             font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
         }
         .verhalen{
-            text-align: center;
-            transform: translateX(-10%);
             color: lightcyan;
             text-shadow: 2px 2px #000;
             font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
         }
+        
         .unmei{
             color: lightskyblue;
             background: #00165e;
@@ -113,9 +113,6 @@
         }
         .unmei::after {
             content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
             width: 100%;
             height: 1px;
             background-color: rgb(70, 215, 217);
@@ -130,10 +127,6 @@
             width: 100%;
             height: 1px;
             background-color: rgb(70, 215, 217);
-        }
-
-        .text {
-            text-align: left;
         }
         
         .language-bar {
@@ -163,7 +156,7 @@
             font: bold 30px/1.5 Helvetica, Verdana, sans-serif;
         }
         .chronicle-image {
-            background-image: url("img/set/bg_chronicle_pc.jpg");
+            background-image: url("img/set/pc/bg_chronicle_pc.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -179,7 +172,7 @@
     display: inline-block;
 }
 .chronicle2 {
-    background-image: url("img/set/bg_fix_pc.jpg");
+    background-image: url("img/set/pc/bg_fix_pc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -245,8 +238,17 @@
         }
 
         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             background-color: #000;
             overflow-x: hidden; /* Voorkomt horizontaal scrollen */
             margin: 0;
             padding: 0;
+            text-size-adjust: 100%;
         }
+        
+        .stupid {
+            flex: 1;
+        }
+        
