@@ -466,13 +466,19 @@
 <img src="img/set/bg_battle02.jpg" alt="soccer">
 </div>
 
-
-
+<div class="mappa">
+    <img src="img/set/bg_mappa.jpg" alt="mappa" style="position: absolute; right:0%">
+    <p class="animation" style="color: #fff; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">ANIMATION</p>
+    <img src="img/set/img_logo_mappa.png" alt="mappa">
+    <p class="produced" style="color:white; left:10%; top:40%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">Animation Geproduceerd door MAPPA!</p>
+    <p class="in-game" style="color:darkcyan; font: bold 15px/1.5 Helvetica, Verdana, sans-serif;">De in-game cut-scenes en andere animatie werden <br> geproduceerd in samenwerking met de animatiestudio <br> MAPPA. <br>
+De game bevat meer uren aan volledige animatie <br> dan ooit, waardoor het verhaal wordt verhoogd en <br> het nog dramatischer en leuker wordt!</p>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+<?php include 'footer.php';?>
 </body>
 </html>
