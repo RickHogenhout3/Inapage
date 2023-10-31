@@ -63,6 +63,11 @@
     position: relative; /* Set the parent container to a relative position */
 }
 
+.chronicle-image {
+    /* Voeg de gewenste marge onderaan toe om de sectie naar beneden te verplaatsen */
+    margin-top: 1500px; /* Pas de marge aan zoals gewenst */
+}
+
 .character {
     position: relative;
     z-index: 0; /* Ensure character is on top */
@@ -79,6 +84,7 @@
     margin-bottom: 10px; /* Adjust this margin as needed to control the vertical spacing between images */
     margin-right: -360px;
     width: 1940px;
+    overflow: hidden;
 }
 
         /* Background image for screens smaller than 750px */
@@ -192,18 +198,98 @@
         align-items: center;
         justify-content: center;
     }
-    .story-image{
-        background-image: url('img/set/mobile/bg_story_sp.jpg'); /* Set the background image */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .mc{
+    .mc {
         content: url('img/set/mobile/img_chara01_sp.png');
-    
+        width: 200px;
+        height: auto;
+        margin-left: 60px;
     }
-    .antagosnist{
+
+    .main {
+        position: absolute;
+        z-index: -1;
+        margin-bottom: 340px;
+        margin-left: 70px;
+
+        /* Stel de initiële hoogte en breedte in */
+        width: 50%; /* Begin met 50% van de container breedte */
+        height: 50%; /* Begin met 50% van de container hoogte */
+
+        /* Beperk de maximale grootte van het element */
+        max-width: 900px; /* Maximale breedte */
+        max-height: 300px; /* Maximale hoogte */
+
+        /* Behoud de aspect ratio (verhouding tussen hoogte en breedte) */
+        aspect-ratio: 9 / 3; /* Bijv. voor een verhouding van 3:1 (300px hoog, 900px breed) */
+
+        /* Voorkom dat het element buiten zijn container valt */
+        overflow: hidden;
+    }
+
+    .antagosnist {
         content: url('img/set/mobile/img_chara02_sp.png');
+        width: auto;
+        height: 320px;
+        position: absolute;
+        margin-right: 0px;
+        margin-bottom: 330px;
+    }
+
+    .character {
+    position: absolute; /* Plaats het element absoluut binnen de container */
+    z-index: -2; /* Zorg dat het element naar de achtergrond wordt verplaatst */
+    margin-bottom: 0;
+    margin-right: 0;
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Maximale breedte is de breedte van de container */
+    max-height: 100%; /* Maximale hoogte is de hoogte van de container */
+    aspect-ratio: 9 / 3; /* Behoud de aspect ratio indien nodig */
+    overflow: hidden; /* Voorkom dat het element buiten de container valt */
+    order: 2;
+    top: 0; /* Zet de positie aan de bovenkant van de container */
+    right: 0; /* Zet de positie aan de rechterkant van de container */
+}
+
+
+    .unmei-images {
+        position: absolute;
+        order: 1; /* Plaats unmei-images links */
+        left: -90px;
+    }
+
+    .endo-images {
+        order: 3; /* Plaats endo-images rechts */
+    }
+
+
+
+    .story-image {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+
+    .unmei-images,
+    .endo-images {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Zorg voor ruimte tussen de elementen */
+        margin-top: 2000px;
+        order: 2;
+    }
+
+    #carouselExampleIndicators {
+        position: relative;
+        top: auto;
+        bottom: 0;
+        transform: translateX(-50%);
+        left: 50%;
+        max-height: 50vh; /* Set a maximum height for the carousel, adjust as needed */
+        overflow: hidden; 
+    }
+    .chronicle-image{
+        background-image: url("img/set/mobile/bg_chronicle_sp.jpg");
     }
 }
     </style>
@@ -273,7 +359,114 @@
             <img class="antagosnist" src="img/set/pc/img_chara02_pc.png" alt="endo">
         </div>
     </div>
+    
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" ></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/set/img_slide_story01.jpg" alt="Introduce" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story02.jpg" alt="Story" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story03.jpg" alt="Chronicle" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story04.jpg" alt="Chronicle" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/set/img_slide_story05.jpg" alt="Chronicle" style="width: 100%;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </div>
+
+    <div class="chronicle-image">
+    <p class="story-mode">Chronical modus</p>
+    <img src="img/text/tit_chronicle_pc.png" alt="oof" style="position: absolute; margin-top:-120px;">
+    <h1>Neem het op tegen het verleden van Inazuma Eleven!</h1>
+    <p class="characters">Inclusief meer dan 4500 personages <br> uit het verleden van de serie! <br> Elke speler zal <br> zijn opwachting maken!</p>
+    <div class="text-container">
+        <span class="include">*Inclusief characters van verschillende versies, releases en seizoenskaarten.</span>
+    </div>
+    <div class="text-container">
+        <span class="exclude">*Exclusief characters van sommige collaboraties, etc.</span>
+    </div>
+    <div>
+        <img src="img/set/img_chronicle01.jpg" alt="vs" style="height:175px;">
+        <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; margin-left:-34px; margin-top:8.6%;">
+    </div>
+</div>
+
+<div class="chronicle2">
+<div class="container">
+    <div class="row">
+        <!-- Eerste kolom in de eerste rij -->
+        <div class="col-md-6">
+            <img src="img/set/bg_chronicle_list.png" alt="list">
+            <img src="img/set/img_chronicle02.jpg" alt="victory" style=" position:absolute; left:45px; top:30px; border: 3px solid yellow; height:auto; width: 83%;">
+            <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 84.5%; top: 25.5%;">
+            <p class="v" style="text-align: center; color: orange; font: bold 16px/1.5 Helvetica, Verdana, sans-serif; text-shadow: 0 0 5px black; position:absolute; top:48.5%; left:49%;">Victory</p>
+            <p class="caravan" style="text-align: center; position:absolute; top:45%; left:9%;">A brand new caravan <br> <a style="color: yellow">De Inazuma V Caravan</a> <br> kan reizen door tijd om de hele <br> geschiedenis van Inazuma te beleven!</p>
+        </div>
+        <!-- Tweede kolom in de eerste rij -->
+        <div class="col-md-6">
+            <div class="column">
+                <img src="img/set/bg_chronicle_list.png" alt="list">
+                <img src="img/set/img_chronicle03.jpg" alt="victory" style="position:absolute; top:5%; left:10%; border: 3px solid yellow; width: 83%;">
+                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
+                <p class="routes" style="text-align: center;">Doorkruis <br> <a style="color: yellow">de Chronicle Competition Routes</a> <br> om te vechten tegen teams uit <br> het verleden in Inazuma History Town!</p>
+                <p class="points" style="text-align: center;">Als je deze wedstrijden wint, verdien je de Bond Stars van de personages!</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Eerste kolom in de tweede rij -->
+        <div class="col-md-6">
+            <div class="column">
+                <img src="img/set/bg_chronicle_list.png" alt="list">
+                <img src="img/set/img_chronicle04.jpg" alt="victory" style="border: 3px solid yellow; width: 100%;">
+                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
+                <p class="universe" style="text-align: center;">Je kunt nieuwe personages ontgrendelen <br> door Bond Stars te gebruiken in <br> <a style="color: yellow">the Player's Universe!</a></p>
+            </div>
+        </div>
+        <!-- Tweede kolom in de tweede rij -->
+        <div class="col-md-6">
+            <div class="column">
+                <img src="img/set/bg_chronicle_list.png" alt="list">
+                <img src="img/set/img_chronicle05.jpg" alt="victory" style="border: 3px solid yellow; width: 100%;">
+                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
+                <p class="alley" style="text-align: center;">Ontgrendelde personages verschijnen <br> in <a style="color: yellow">de Bond Alley!</a> <br> voldoen aan de vereisten van <br> het Bond Netwerk, <br> ze kunnen je bondgenoot worden!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="free-style" style="background-color: #00165e; width:100%; height:55%">
+<p class="playing" style="text-align: center;">Speel hoe je wilt in freestyle play!</p>
+<img src="img/set/bg_battle01.jpg" alt="battle">
+<img src="img/set/bg_battle02.jpg" alt="soccer">
+</div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
