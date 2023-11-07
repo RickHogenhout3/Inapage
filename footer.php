@@ -36,12 +36,12 @@
   </table>
   
 <img class="vision" src="img/set/pc/bnr_vision_pc.png" alt="vision" style="display:flex; align-items:center;"> <br>
-<img src="img/set/img_logo_l5_f.png" alt="lvl5" style="align-items:center; height: 45px; width: 100px;">
 <div style="display: flex; justify-content: center;">
     <img src="img/set/footer-banner03.png" alt="inazuma" style="width: 12%; margin-right: 10px;">
     <img src="img/set/footer-banner04.jpg" alt="eleven" style="width: 12%; margin-right: 10px;">
     <img src="img/set/bnr_kadokawa.jpg" alt="roads" style="width: 12%;">
 </div>
+<img src="img/set/img_logo_l5_f.png" alt="lvl5" style="align-items:center; height: 45px; width: 100px;">
 <div class="trademark" style="width:50%; height:10%; font-size: 85%;">
     *The Nintendo Switch logo and Nintendo Switch are trademarks of Nintendo. <br>
     *"<img src="img/set/img_logo_ps.png" style="height: 16px;">", "PlayStation", "<img src="img/set/img_logo_ps4.png" style="height: 12px;">" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. <br>

@@ -223,10 +223,9 @@
             font: bold 24px/1.5 Helvetica, Verdana, sans-serif;
             text-shadow: 0 0 5px black;
         }
-        .mappa{
+        #mappa{
             background-color: #0f131e;
             background-size: cover;
-            width: 100%; height: 54.5%;
         }
         footer{
             background: #212121;
@@ -252,3 +251,109 @@
             flex: 1;
         }
         
+        /* ... (your existing CSS) ... */
+/* Add a new CSS class for the overlay */
+.image-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ... (your existing CSS) ... */
+/* Add a new CSS class for the close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.zoomable-image {
+    cursor: pointer;
+}
+
+.zoomable-image:hover {
+    border: 3px solid yellow;
+}
+
+/* Style for the video modal */
+#video-modal {
+    display: none; /* Initially hide the modal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 2;
+    text-align: center;
+}
+
+/* Add this style for the video modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Set the background color to black with some transparency */
+}
+
+/* Add this style for the modal content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    background-color: #00165e; /* Set the background color of the modal content (white) */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Update this style for the close button to match your design */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow; /* Set the close button color to white */
+    cursor: pointer;
+}
+
+/* Update the styles as needed for your video modal */
+
+
+#video-frame {
+    width: 100%; /* Make the video responsive within the modal */
+    height: 90vh; /* Set an appropriate height, adjust as needed */
+    background-color: transparent;
+    border: none;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image-x-icon" href="img/set/img_logo.png">
     <title>INAZUMA ELEVEN: Victory Road</title>
@@ -314,17 +314,24 @@
                 </div>
     </div>
         <ul>
-        <li style="background: none;">
-        <img src="img/set/img_movie_pv_vision.png" alt="trailer" class="trailer">
-        </li>
+            <li style="background: none;">
+                <div id="video-modal" class="modal">
+                    <div class="modal-content">
+                        <span id="close-video-button" class="close-button" onclick="closeVideoModal()">&times;</span>
+                        <iframe id="video-frame" width="560" height="315" style="background:transparent;" src="https://www.youtube.com/embed/KkRQsURQjH4?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <img src="img/set/img_movie_pv_vision.png" alt="trailer" class="trailer-image" id="trailer-image" onclick="openVideoModal()">
+            </li>
         </ul>
+
         <ul style="background: none;">
         <div class="container stack-images">
             <li style="background:none;">
             <img class="blog" src="img/set/img_bnr_blog.png" alt="blog">
             </li>
             <li style="background:none;">
-            <img class="mappa" src="img/set/img_bnr_mappa.png" alt="mappa">
+            <a href="#mappa"><img class="mappa" src="img/set/img_bnr_mappa.png" alt="mappa"></a>
             </li>
         </div>
     </ul>
@@ -401,17 +408,16 @@
 
     <div class="chronicle-image">
     <p class="story-mode">Chronical modus</p>
-    <img src="img/text/tit_chronicle_pc.png" alt="oof" style="position: absolute; margin-top:-120px;">
     <h1>Neem het op tegen het verleden van Inazuma Eleven!</h1>
     <p class="characters">Inclusief meer dan 4500 personages <br> uit het verleden van de serie! <br> Elke speler zal <br> zijn opwachting maken!</p>
     <div class="text-container">
         <span class="include">*Inclusief characters van verschillende versies, releases en seizoenskaarten.</span>
-    </div>
+    </div> <br>
     <div class="text-container">
         <span class="exclude">*Exclusief characters van sommige collaboraties, etc.</span>
     </div>
     <div>
-        <img src="img/set/img_chronicle01.jpg" alt="vs" style="height:175px;">
+        <img src="img/set/img_chronicle01.jpg" alt="vs"  class="zoomable-image" style="height:175px;">
         <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; margin-left:-34px; margin-top:8.6%;">
     </div>
 </div>
@@ -422,39 +428,40 @@
         <!-- Eerste kolom in de eerste rij -->
         <div class="col-md-6">
             <img src="img/set/bg_chronicle_list.png" alt="list">
-            <img src="img/set/img_chronicle02.jpg" alt="victory" style=" position:absolute; left:45px; top:30px; border: 3px solid yellow; height:auto; width: 83%;">
-            <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 84.5%; top: 25.5%;">
-            <p class="v" style="text-align: center; color: orange; font: bold 16px/1.5 Helvetica, Verdana, sans-serif; text-shadow: 0 0 5px black; position:absolute; top:48.5%; left:49%;">Victory</p>
-            <p class="caravan" style="text-align: center; position:absolute; top:45%; left:9%;">A brand new caravan <br> <a style="color: yellow">De Inazuma V Caravan</a> <br> kan reizen door tijd om de hele <br> geschiedenis van Inazuma te beleven!</p>
+            <img src="img/set/img_chronicle02.jpg" alt="victory" class="zoomable-image" style=" position:absolute; left:45px; top:30px; border: 3px solid yellow; height:auto; width: 83%;">
+            <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 84.5%; top: 49.5%;">
+            <p class="v" style="text-align: center; color: orange; font: bold 16px/1.5 Helvetica, Verdana, sans-serif; text-shadow: 0 0 5px black; position:absolute; top:64.5%; left:49%;">Victory</p>
+            <p class="caravan" style="text-align: center; position:absolute; top:59%; left:9%;">A brand new caravan <br> <a style="color: yellow">De Inazuma V Caravan</a> <br> kan reizen door tijd om de hele <br> geschiedenis van Inazuma te beleven!</p>
         </div>
         <!-- Tweede kolom in de eerste rij -->
         <div class="col-md-6">
-            <div class="column">
-                <img src="img/set/bg_chronicle_list.png" alt="list">
-                <img src="img/set/img_chronicle03.jpg" alt="victory" style="position:absolute; top:5%; left:10%; border: 3px solid yellow; width: 83%;">
-                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
-                <p class="routes" style="text-align: center;">Doorkruis <br> <a style="color: yellow">de Chronicle Competition Routes</a> <br> om te vechten tegen teams uit <br> het verleden in Inazuma History Town!</p>
-                <p class="points" style="text-align: center;">Als je deze wedstrijden wint, verdien je de Bond Stars van de personages!</p>
-            </div>
+        <div class="column">
+            <img src="img/set/bg_chronicle_list.png" alt="list">
+            <img src="img/set/img_chronicle03.jpg" alt="victory" class="zoomable-image" style="position: absolute; top: 6%; right: 8%; border: 3px solid yellow; height:auto; width: 83%; ">
+            <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 8%; top: 50%;">
+            <p class="routes" style="position: absolute; top: 58%; right: 63px; text-align: center;">Doorkruis <br> <a style="color: yellow">de Chronicle Competition Routes</a> <br> om te vechten tegen teams uit <br> het verleden in Inazuma History Town!</p>
+            <p class="points" style="position: absolute; top: 90%; right: 59px; text-align: center;">Als je deze wedstrijden wint, verdien je de Bond Stars van de personages!</p>
         </div>
+    </div>
+    
     </div>
     <div class="row">
         <!-- Eerste kolom in de tweede rij -->
         <div class="col-md-6">
             <div class="column">
                 <img src="img/set/bg_chronicle_list.png" alt="list">
-                <img src="img/set/img_chronicle04.jpg" alt="victory" style="border: 3px solid yellow; width: 100%;">
-                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 43.5%; top: 49%;">
-                <p class="universe" style="text-align: center;">Je kunt nieuwe personages ontgrendelen <br> door Bond Stars te gebruiken in <br> <a style="color: yellow">the Player's Universe!</a></p>
+                <img src="img/set/img_chronicle04.jpg" alt="victory"  class="zoomable-image" style="position:absolute; top:5%; left:8%; border: 3px solid yellow; width: 83%;">
+                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; left: 85%; top: 49%;">
+                <p class="universe" style="position:absolute; top:60%; right:9%; text-align: center;">Je kunt nieuwe personages ontgrendelen <br> door Bond Stars te gebruiken in <br> <a style="color: yellow">the Player's Universe!</a></p>
             </div>
         </div>
         <!-- Tweede kolom in de tweede rij -->
         <div class="col-md-6">
             <div class="column">
                 <img src="img/set/bg_chronicle_list.png" alt="list">
-                <img src="img/set/img_chronicle05.jpg" alt="victory" style="border: 3px solid yellow; width: 100%;">
-                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 3.5%; top: 49%;">
-                <p class="alley" style="text-align: center;">Ontgrendelde personages verschijnen <br> in <a style="color: yellow">de Bond Alley!</a> <br> voldoen aan de vereisten van <br> het Bond Netwerk, <br> ze kunnen je bondgenoot worden!</p>
+                <img src="img/set/img_chronicle05.jpg" alt="victory"  class="zoomable-image" style="position:absolute; top:5%; left:8%; border: 3px solid yellow; width: 83%;">
+                <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; right: 9.5%; top: 49%;">
+                <p class="alley" style="position: absolute; top:60%; left:12%; text-align: center;">Ontgrendelde personages verschijnen <br> in <a style="color: yellow">de Bond Alley!</a> <br> voldoen aan de vereisten van <br> het Bond Netwerk, <br> ze kunnen je bondgenoot worden!</p>
             </div>
         </div>
     </div>
@@ -466,19 +473,31 @@
 <img src="img/set/bg_battle02.jpg" alt="soccer">
 </div>
 
-<div class="mappa">
-    <img src="img/set/bg_mappa.jpg" alt="mappa" style="position: absolute; right:0%">
-    <p class="animation" style="color: #fff; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">ANIMATION</p>
-    <img src="img/set/img_logo_mappa.png" alt="mappa">
-    <p class="produced" style="color:white; left:10%; top:40%; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">Animation Geproduceerd door MAPPA!</p>
-    <p class="in-game" style="color:darkcyan; font: bold 15px/1.5 Helvetica, Verdana, sans-serif;">De in-game cut-scenes en andere animatie werden <br> geproduceerd in samenwerking met de animatiestudio <br> MAPPA. <br>
-De game bevat meer uren aan volledige animatie <br> dan ooit, waardoor het verhaal wordt verhoogd en <br> het nog dramatischer en leuker wordt!</p>
+<div class="container" id="mappa">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mappa">
+                <p class="animation" style="color: #fff; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">ANIMATION</p>
+                <p class="produced" style="color:white; font: bold 24px/1.5 Helvetica, Verdana, sans-serif;">Animation Geproduceerd door MAPPA!</p>
+                <p class="in-game" style="color: darkcyan; font: bold 15px/1.5 Helvetica, Verdana, sans-serif;">De in-game cut-scenes en andere animatie werden <br> geproduceerd in samenwerking met de animatiestudio <br> MAPPA. <br>
+                    De game bevat meer uren aan volledige animatie <br> dan ooit, waardoor het verhaal wordt verhoogd en <br> het nog dramatischer en leuker wordt!</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="img/set/bg_mappa.jpg" alt="mappa">
+        </div>
+    </div>
+</div>
+
+<div class="image-overlay" id="image-overlay">
+    <button id="close-button" class="close-button">X</button>
+    <img id="zoomed-image" src="" alt="Zoomed Image">
 </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="script.js"></script>
 <?php include 'footer.php';?>
 </body>
 </html>
