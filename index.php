@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image-x-icon" href="img/set/img_logo.png">
     <title>INAZUMA ELEVEN: Victory Road</title>
@@ -275,7 +275,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between; /* Zorg voor ruimte tussen de elementen */
-        margin-top: 2000px;
+        margin-top: 1600px;
         order: 2;
     }
 
@@ -287,6 +287,7 @@
         left: 50%;
         max-height: 50vh; /* Set a maximum height for the carousel, adjust as needed */
         overflow: hidden; 
+        z-index: -1;
     }
     .chronicle-image{
         background-image: url("img/set/mobile/bg_chronicle_sp.jpg");
@@ -328,7 +329,7 @@
         <ul style="background: none;">
         <div class="container stack-images">
             <li style="background:none;">
-            <img class="blog" src="img/set/img_bnr_blog.png" alt="blog">
+            <a href="https://www.level5.co.jp/blog/230309/"><img class="blog" src="img/set/img_bnr_blog.png" alt="blog"></a>
             </li>
             <li style="background:none;">
             <a href="#mappa"><img class="mappa" src="img/set/img_bnr_mappa.png" alt="mappa"></a>
@@ -418,7 +419,7 @@
     </div>
     <div>
         <img src="img/set/img_chronicle01.jpg" alt="vs"  class="zoomable-image" style="height:175px;">
-        <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; margin-left:-34px; margin-top:8.6%;">
+        <img src="img/set/icn_mg.png" alt="oke" style="position: absolute; margin-left:-34px; margin-top:7.2%;">
     </div>
 </div>
 

@@ -1,3 +1,17 @@
+        /* add a font to the body via .ttf*/
+        @font-face {
+            font-family: "inazuma";
+            src: url("/img/garagesh.ttf") format("truetype"),
+            url("/img/garagesh.ttf") format("truetype");
+        }
+        /*add the new font to the body*/
+        body {
+            font-family: 'inazuma', sans-serif;
+          }
+          
+
+
+
         h3 {
         color: yellow;
         font-weight: bold;
@@ -357,3 +371,26 @@
     background-color: transparent;
     border: none;
 }
+
+.trademark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trademark {
+    width: 50%;
+    height: 10%;
+    text-align: center;
+  }
+  
+  .info-table {
+    border-collapse: collapse;
+    width: 50%;
+    font-size: 85%;
+  }
+  
+  .info-table td {
+    padding: 8px 12px;
+  }
+  

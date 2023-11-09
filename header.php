@@ -3,7 +3,7 @@
         <div class="logo">
             <img src="img/set/img_logo_l5.png" style="width:150px;height:auto;" alt="l5">
         </div>
-        <div class="language-bar">
+        <div class="language-bar" style="z-index: 4;">
             <a href="https://twitter.com/InazumaSeries">
                 <img src="img/set/btn_twitter.png" alt="tweet">
             </a>
