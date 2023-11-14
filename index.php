@@ -229,9 +229,9 @@
     .antagosnist {
         content: url('img/set/mobile/img_chara02_sp.png');
         width: auto;
-        height: 320px;
+        height: 330px;
         position: absolute;
-        margin-right: 0px;
+        margin-right: 1100px;
         margin-bottom: 330px;
     }
 
@@ -240,14 +240,13 @@
     z-index: -2; /* Zorg dat het element naar de achtergrond wordt verplaatst */
     margin-bottom: 0;
     margin-right: 0;
-    width: auto;
-    height: auto;
+    height: 200px;
+    width: 300px;
     max-width: 100%; /* Maximale breedte is de breedte van de container */
-    max-height: 100%; /* Maximale hoogte is de hoogte van de container */
     aspect-ratio: 9 / 3; /* Behoud de aspect ratio indien nodig */
     overflow: hidden; /* Voorkom dat het element buiten de container valt */
     order: 2;
-    top: 0; /* Zet de positie aan de bovenkant van de container */
+    top: 10px; /* Zet de positie aan de bovenkant van de container */
     right: 0; /* Zet de positie aan de rechterkant van de container */
 }
 
@@ -258,11 +257,24 @@
         left: -90px;
     }
 
-    .endo-images {
-        order: 3; /* Plaats endo-images rechts */
+    .character,
+    .antagosnist {
+        position: static;
+        margin: 100px 0; /* Adjust margin as needed */
     }
 
+    .endo-images {
+        order: 2; /* Adjust the order as needed */
+        right: -100px; /* Adjust the right positioning if needed */
+        position: absolute; /* Change the position to static */
+    }
 
+    #story{
+        text-align: center;
+        position: absolute;
+        left: 5%;
+        top: 200%;
+    }
 
     .story-image {
         flex-direction: column;
@@ -274,19 +286,19 @@
     .endo-images {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between; /* Zorg voor ruimte tussen de elementen */
-        margin-top: 1600px;
+        justify-content: space-between;
+        margin-top: 2600px;
         order: 2;
     }
 
     #carouselExampleIndicators {
         position: relative;
         top: auto;
-        bottom: 0;
+        bottom: -350px; /* Verlaag de positie van de carousel voor kleinere schermen */
         transform: translateX(-50%);
         left: 50%;
-        max-height: 50vh; /* Set a maximum height for the carousel, adjust as needed */
-        overflow: hidden; 
+        max-height: 50vh;
+        overflow: hidden;
         z-index: -1;
     }
     .chronicle-image{
@@ -349,7 +361,7 @@
             <img class="main" src="img/set/bg_chara01.png" alt="unmei">
             <img class="mc" src="img/set/pc/img_chara01_pc.png" alt="unmei">
         </div>
-        <div style="text-align: center;">
+        <div id="story" style="text-align: center;">
             <p class="story-mode">Verhaal Modus</p>
             <img src="img/text/tit_story_pc.png" alt="Inazuma Eleven">
             <p class="verhaal">Een jongen die verlangt naar een wereld zonder voetbal.</p>
