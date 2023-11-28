@@ -338,7 +338,7 @@
             </li>
         </ul>
 
-        <ul style="background: none;">
+    <ul style="background: none;">
         <div class="container stack-images">
             <li style="background:none;">
             <a href="https://www.level5.co.jp/blog/230309/"><img class="blog" src="img/set/img_bnr_blog.png" alt="blog"></a>
@@ -347,6 +347,11 @@
             <a href="#mappa"><img class="mappa" src="img/set/img_bnr_mappa.png" alt="mappa"></a>
             </li>
         </div>
+    </ul>
+    <ul style="background: none;">
+        <li>
+            <a href="inalink/inalink.php"><img src="img/set/Screenshot_2023-11-15_124317-removebg-preview.png" alt="inalink"></a>
+        </li>
     </ul>
 
     </div>
