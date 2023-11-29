@@ -1,0 +1,78 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600l;700&display=swap');
+
+body {
+    background: url("img/inalink.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.signup {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.signup header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button input {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.header-content {
+    background-color: #b4fca5;
+    padding: 10px;
+    text-align: left;
+}
+
+.logo {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: auto;
+}
