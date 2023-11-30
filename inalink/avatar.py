@@ -40,6 +40,15 @@ def main():
         {"name": "Zaizen_Touko", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/8/83/Zaizen_Touko_save_icon_%28S%29.png/revision/latest?cb=20230723151038"},
         {"name": "Utsunomiya_Toramaru", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/9/92/Utsunomiya_Toramaru_save_icon_%28S%29.png/revision/latest?cb=20230723151252"},
         {"name": "Fudou_Akio", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/5/50/Fudou_Akio_save_icon_%28S%29.png/revision/latest?cb=20230723151333"},
+        {"name": "Sakuma_Jirou", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/c/c4/Sakuma_Jirou_save_icon_%28S%29.png/revision/latest?cb=20230723151414"},
+        {"name": "Sakuma_Jirou_adult", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/2/26/Sakuma_Jirou_save_icon_%28adult%29_%28S%29.png/revision/latest?cb=20230723154247"},
+        {"name": "Genda_Koujirou", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/6/62/Genda_Koujirou_save_icon_%28S%29.png/revision/latest?cb=20230723151457"},
+        {"name": "Nishizono_Shinsuke", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/8/85/Nishizono_Shinsuke_save_icon_%28S%29.png/revision/latest?cb=20230723142612"},
+        {"name": "Kirino_Ranmaru", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/3/30/Kirino_Ranmaru_save_icon_%28S%29.png/revision/latest?cb=20230723142702"},
+        {"name": "Afuro_Terumi", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/3/33/Afuro_Terumi_save_icon_%28S%29.png/revision/latest?cb=20230723151630"},
+        {"name": "Afuro_Terumi_adult", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/2/2e/Afuro_Terumi_save_icon_%28adult%29_%28S%29.png/revision/latest?cb=20230723153801"},
+        {"name": "Nishiki_Ryouma", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/2/2b/Nishiki_Ryouma_save_icon_%28S%29.png/revision/latest?cb=20230723142749"},
+        {"name": "Sangoku_Taichi", "url": "https://static.wikia.nocookie.net/inazuma-eleven/images/7/77/Sangoku_Taichi_save_icon_%28S%29.png/revision/latest?cb=20230723142834"},
     ]
 
     output_folder = "avatars"
