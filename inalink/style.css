@@ -38,6 +38,10 @@ body {
     margin-bottom: 5px;
 }
 
+.search .input-group .search-input {
+    width: 200px; /* Adjust the width as needed */
+}
+
 .field input {
     width: 100%;
     padding: 10px;
@@ -89,4 +93,55 @@ body {
 
 label {
     font-weight: bold;
+}
+
+.profilepic {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+.details{
+    margin: 15px;
+}
+
+.user-list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.user-list img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.user-list a{
+    text-decoration: none;
+    color: #000;
+}
+
+.user-list:last-child{
+    border: none;
+}
+
+.user-list::-webkit-scrollbar{
+    width: 0px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details span {
+    font-weight: bold;
+}
+
+.status-dot {
+    color: green;
 }

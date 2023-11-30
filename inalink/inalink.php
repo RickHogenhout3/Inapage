@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="icon" type="image-x-icon" href="img/Screenshot_2023-11-15_124317-removebg-preview.png">
@@ -13,22 +13,110 @@
 <body background="img/inalink.png" style="background-size: cover; background-attachment: fixed;">
     <?php include 'header.php' ?> <br>
     <section class="form signup container">
-        <header>
-            <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+        <header class="d-flex">
+            <img class="profilepic" src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
             <div class="details">
-                <span>Someoka Ryugo</span>
+                <span style="font-weight: bold;">Someoka Ryugo</span>
                 <p>active now</p>
             </div>
-            <a href="logout.php">
-                <span class="logout">Logout</span>
-            </a>
+            <div class="ml-auto">
+                <a href="logout.php">
+                    <button class="btn btn-dark btn-lg">Logout</button>
+                </a>
+            </div>
         </header>
-        <div class="search">
-        <span class="text">Select an user to start chat</span>
-        <input type="text" placeholder="Enter name to search...">
-        <button><i class="fas fa-search"></i></button>
+        <div class="search d-flex">
+    <div class="input-group">
+        <input class="form-control mr-sm-2 search-input" type="text" placeholder="Enter a name...">
+        <button class="btn btn-success" type="button"><i class="fas fa-search"></i></button>
     </div>
+</div>
+
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <div class="user-list d-flex align-items-center">
+            <a href="" class="d-flex align-items-center w-100">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details ml-2 flex-grow-1">
+                    <span>Afuro Terumi</span>
+                    <p>text message</p>
+                </div>
+                <div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
+                </div>
+            </a>
+        </div>
+        <!-- Repeat the user-list divs as needed -->
     </section>
-    
 </body>
 </html>
