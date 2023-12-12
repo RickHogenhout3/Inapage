@@ -160,12 +160,35 @@ label {
     margin: 20px auto;
 }
 
-.chat-outgoing, .chat-incoming {
+.chat-outgoing {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: flex-end; /* Align to the right */
+}
+
+.chat-outgoing .details {
+    background-color: aliceblue;
+    color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.chat-outgoing img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.chat-incoming {
     display: flex;
     margin-bottom: 10px;
 }
 
-.chat-outgoing .details, .chat-incoming .details {
+.chat-incoming .details {
     background-color: aliceblue;
     color: blue;
     padding: 10px;
@@ -182,9 +205,24 @@ label {
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
-}.chat-outgoing img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+}
+
+.chats-container {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    overflow-y: auto;
+}
+
+.chats-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chats-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.chats-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
