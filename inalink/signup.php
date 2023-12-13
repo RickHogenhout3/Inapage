@@ -49,25 +49,25 @@
                             <img src="avatars/Gouenji_Shuuya_avatar.png" alt="Avatar 3" class="avatar" onclick="selectAvatar('avatar3.jpg', this)">
                             <img src="avatars/Kazemaru_Ichirouta_avatar.png" alt="Avatar 5" class="avatar" onclick="selectAvatar('avatar5.jpg', this)">
                             <img src="avatars/Kabeyama_Heigorou_avatar.png" alt="Avatar 12" class="avatar" onclick="selectAvatar('avatar12.jpg', this)">
-                            <img src="avatars/Someoka_Ryugo_avatar.png" alt="Avatar 13" class="avatar" onclick="selectAvatar('avatar13.jpg'), this">
+                            <img src="avatars/Someoka_Ryugo_avatar.png" alt="Avatar 13" class="avatar" onclick="selectAvatar('avatar13.jpg', this)">
                             <img src="avatars/Kidou_Yuuto_avatar.png" alt="Avatar 6" class="avatar" onclick="selectAvatar('avatar6.jpg', this)">
                             <img src="avatars/Fubuki_Shirou_avatar.png" alt="Avatar 2" class="avatar" onclick="selectAvatar('avatar2.jpg', this)">
-                            <img src="avatars/Tachimukai_Yuuki_avatar.png" alt="Avatar 4" class="avatar" onclick="selectAvatar('avatar4.jpg'), this">
+                            <img src="avatars/Tachimukai_Yuuki_avatar.png" alt="Avatar 4" class="avatar" onclick="selectAvatar('avatar4.jpg', this)">
                             <img src="avatars/Tsunami_Jousuke_avatar.png" alt="Avatar 14" class="avatar" onclick="selectAvatar('avatar14.jpg', this)">
-                            <img src="avatars/Zaizen_Touko_avatar.png" alt="Avatar 15" class="avatar" onclick="selectAvatar('avatar15.jpg'), this">
+                            <img src="avatars/Zaizen_Touko_avatar.png" alt="Avatar 15" class="avatar" onclick="selectAvatar('avatar15.jpg', this)">
                             <img src="avatars/Kiyama_Hiroto_avatar.png" alt="Avatar 7" class="avatar" onclick="selectAvatar('avatar7.jpg', this)">
-                            <img src="avatars/Utsunomiya_Toramaru_avatar.png" alt="Avatar 16" class="avatar" onclick="selectAvatar('avatar16.jpg'), this">
-                            <img src="avatars/Fudou_Akio_avatar.png" alt="Avatar 17" class="avatar" onclick="selectAvatar('avatar17.jpg'), this">
-                            <img src="avatars/Sakuma_Jirou_avatar.png" alt="Avatar 18" class="avatar" onclick="selectAvatar('avatar18.jpg'), this"> 
-                            <img src="avatars/Genda_Koujirou_avatar.png" alt="Avatar 19" class="avatar" onclick="selectAvatar('avatar19.jpg'), this">
-                            <img src="avatars/Afuro_Terumi_avatar.png" alt="Avatar 22" class="avatar" onclick="selectAvatar('avatar22.jpg'), this"><br>
+                            <img src="avatars/Utsunomiya_Toramaru_avatar.png" alt="Avatar 16" class="avatar" onclick="selectAvatar('avatar16.jpg', this)">
+                            <img src="avatars/Fudou_Akio_avatar.png" alt="Avatar 17" class="avatar" onclick="selectAvatar('avatar17.jpg', this)">
+                            <img src="avatars/Sakuma_Jirou_avatar.png" alt="Avatar 18" class="avatar" onclick="selectAvatar('avatar18.jpg', this)"> 
+                            <img src="avatars/Genda_Koujirou_avatar.png" alt="Avatar 19" class="avatar" onclick="selectAvatar('avatar19.jpg', this)">
+                            <img src="avatars/Afuro_Terumi_avatar.png" alt="Avatar 22" class="avatar" onclick="selectAvatar('avatar22.jpg', this)"><br>
                             <img src="avatars/Matsukaze_Tenma_avatar.png" alt="Avatar 8" class="avatar" onclick="selectAvatar('avatar8.jpg', this)">
                             <img src="avatars/Shindou_Takuto_avatar.png" alt="Avatar 9" class="avatar" onclick="selectAvatar('avatar9.jpg', this)">
                             <img src="avatars/Tsurugi_Kyousuke_avatar.png" alt="Avatar 10" class="avatar" onclick="selectAvatar('avatar10.jpg', this)">
                             <img src="avatars/Nishizono_Shinsuke_avatar.png" alt="Avatar 20" class="avatar" onclick="selectAvatar('avatar20.jpg', this)">
                             <img src="avatars/Kirino_Ranmaru_avatar.png" alt="Avatar 21" class="avatar" onclick="selectAvatar('avatar21.jpg', this)">
                             <img src="avatars/Nishiki_Ryouma_avatar.png" alt="Avatar 23" class="avatar" onclick="selectAvatar('avatar23.jpg', this)">
-                            <img src="avatars/Sangoku_Taichi_avatar.png" alt="Avatar 24" class="avatar" onclick="selectAvatar('avatar24.jpg'), this">
+                            <img src="avatars/Sangoku_Taichi_avatar.png" alt="Avatar 24" class="avatar" onclick="selectAvatar('avatar24.jpg', this)">
                             <img src="avatars/Tsurugi_Yuuichi_avatar.png" alt="avatar 11" class="avatar" onclick="selectAvatar('avatar11.jpg', this)">
                         </div>
                         <input type="hidden" name="selected_avatar" id="selected_avatar">
@@ -96,5 +96,7 @@
             element.classList.add('avatar-selected');
         }
     </script>
+
+    <script src="script/sign-up.js"></script>
 </body>
 </html>

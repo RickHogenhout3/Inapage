@@ -272,3 +272,15 @@ label {
     outline: none;
     font-size: 16px;
 }
+
+.typing-area button {
+    color: #fff;
+    background-color: #2a7eaf;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}

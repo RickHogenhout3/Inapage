@@ -12,7 +12,7 @@
 </head>
 <body background="img/inalink.png" style="background-size: cover; background-attachment: fixed;">
     <?php include 'header.php' ?> <br>
-    <section class="form signup container">
+    <section class="users form signup container">
         <header class="d-flex">
             <img class="profilepic" src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
             <div class="details">
@@ -60,5 +60,6 @@
 </div>
         <!-- Repeat the user-list divs as needed -->
     </section>
+    <script src="script/users.js"></script>
 </body>
 </html>
