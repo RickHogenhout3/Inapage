@@ -13,31 +13,98 @@
 <body background="img/inalink.png" style="background-size: cover; background-attachment: fixed;">
     <?php include 'header.php' ?> <br>
     <section class="form signup container">
-        <header>
-        <div class="d-flex align-items-center">
+        <header class="which-chat d-flex align-items-center">
             <a href="" style="color: green;"><i class="fas fa-arrow-left"></i></a>
             <img class="chat-profilepic" src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
-            <div class="details">
-                <span style="font-weight: bold;">Afuro Terumi</span>
-                <p>active now</p>
+            <div class="details ml-3">
+                <span class="font-weight-bold">Afuro Terumi</span>
+                <div class="d-flex align-items-center">
+                    <p class="mb-0">active now</p>
+                    <div class="status-dot ml-2 fa-sm"><i class="fas fa-circle"></i></div>
+                </div>
+            </div>
+        </header>
+
+    <div class="chat-area">
+        <div class="chatbox">
+            <div class="chat-outgoing">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
+                </div>
+                <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+            </div>
+            <div class="chat-incoming">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+            <div class="chat-outgoing">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
+                </div>
+                <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+            </div>
+            <div class="chat-incoming">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+            <div class="chat-outgoing">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
+                </div>
+                <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+            </div>
+            <div class="chat-incoming">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+            <div class="chat-outgoing">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
+                </div>
+                <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+            </div>
+            <div class="chat-incoming">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+            <div class="chat-outgoing">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
+                </div>
+                <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+            </div>
+            <div class="chat-incoming">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+            <div class="chat-outgoing">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
+                </div>
+                <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
+            </div>
+            <div class="chat-incoming">
+                <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
             </div>
         </div>
-</header>
-
-<div class="chatbox">
-    <div class="chat-outgoing">
-        <div class="details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.msdsjnhejgiojgioegnjiosgnrlsrnjklrnglksnbgkjlsrnkjgnsrkjbgnskn</p>
-        </div>
-        <img src="avatars/Someoka_Ryugo_adult_avatar.png" alt="">
-    </div>
-    <div class="chat-incoming">
-        <img src="avatars/Afuro_Terumi_adult_avatar.png" alt="">
-        <div class="details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-        </div>
-    </div>
-</div>
+        <form action="#" class="typing-area">
+            <input type="text" placeholder="Message">
+            <button><i class="fab fa-telegram-plane"></i></button>
+        </form>
     </section>
+    </div>
 </body>
 </html>

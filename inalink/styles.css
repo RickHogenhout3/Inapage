@@ -62,7 +62,7 @@ body {
 
 .logo {
     color: green;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
     padding: 5px;
 }
@@ -135,6 +135,10 @@ label {
     width: 0px;
 }
 
+:is(.chats-container, .chatbox)::-webkit-scrollbar {
+    width: 0px;
+}
+
 .details {
     flex: 1;
 }
@@ -156,8 +160,30 @@ label {
     color: green;
 }
 
+
+.which-chat {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+}
+
+.which-chat .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; /* Adjust the margin as needed */
+    word-wrap: break-word;
+}
+
+.which-chat .status-dot {
+    margin-top: 5px; /* Adjust the margin as needed */
+}
 .chatbox {
     margin: 20px auto;
+    overflow-y:auto;
+    height: 600px;
+    padding: 10px 30px 20px 30px;
 }
 
 .chat-outgoing {
@@ -173,13 +199,15 @@ label {
     border-radius: 8px;
     max-width: 70%;
     margin-left: 20px; /* Adjust the margin as needed */
+    word-wrap: break-word;
 }
 
 .chat-outgoing img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-top: 26px;
 }
 
 
@@ -194,6 +222,7 @@ label {
     padding: 10px;
     border-radius: 8px;
     max-width: 70%;
+    word-wrap: break-word;
 }
 
 .chat-incoming {
@@ -201,10 +230,11 @@ label {
 }
 
 .chat-incoming img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-top: 26px;
 }
 
 .chats-container {
@@ -214,10 +244,6 @@ label {
     overflow-y: auto;
 }
 
-.chats-container::-webkit-scrollbar {
-    width: 8px;
-}
-
 .chats-container::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 4px;
@@ -225,4 +251,24 @@ label {
 
 .chats-container::-webkit-scrollbar-track {
     background-color: #f1f1f1;
+}
+
+.chat-area .typing-area{
+    display: flex;
+    padding: 18px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.typing-area input {
+    height: 45px;
+    width: calc(100% - 50px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
 }
